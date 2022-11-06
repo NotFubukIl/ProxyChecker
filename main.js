@@ -23,5 +23,5 @@ file.forEach(async r => {
     }
 })
 
-process.on("unhandledRejection", callback => {})
-process.on("uncaughtException", callback => {})
+process.on("unhandledRejection", callback => console.log(callback))
+process.on("uncaughtException", callback => console.log(callback))
